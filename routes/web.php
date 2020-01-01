@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/login', 'LibraryController@login');
@@ -21,4 +21,4 @@ Route::get('register','LibraryController@register');
 
 Route::post('/home','LibraryController@insert');
 
-Route::get('/home', 'LibraryController@home');
+//Route::get('/home', 'LibraryController@home');
