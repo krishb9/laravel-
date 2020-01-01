@@ -11,17 +11,17 @@
   <title>Digital Library</title>
 
   <!-- Font Awesome Icons -->
-  <link href="{{URL::asset('/admin/vendor/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{URL::asset('./admin/vendor/all.min.css')}}" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
   <!-- Plugin CSS -->
-  <link href="{{URL::asset('admin/vendor/magnific-popup.css')}}" rel="stylesheet"/>
+  <link href="{{URL::asset('./admin/vendor/magnific-popup.css')}}" rel="stylesheet"/>
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="{{URL::asset('admin/css/creative.min.css')}}" rel="stylesheet"/>
+  <link href="{{URL::asset('./admin/css/creative.min.css')}}" rel="stylesheet"/>
 
 </head>
 
@@ -30,21 +30,21 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Login</a>
-      <a class="navbar-brand js-scroll-trigger" href="#">Sign Up</a>
+      <a class="navbar-brand js-scroll-trigger" href="register">Login</a>
+      <a class="navbar-brand js-scroll-trigger" href="register">SignUp</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Authors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Books</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Issue Book</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -113,8 +113,8 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+          <a class="portfolio-box" href="{{URL::asset('./admin/img/portfolio/1.jpg')}}">
+            <img class="img-fluid" src="{{URL::asset('./admin/img/portfolio/thumbnails/1.jpg')}}" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -126,8 +126,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+          <a class="portfolio-box" href="{{URL::asset('./admin/img/portfolio/2.jpg')}}">
+            <img class="img-fluid" src="{{URL::asset('./admin/img/portfolio/thumbnails/2.jpg')}}" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -139,8 +139,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+          <a class="portfolio-box" href="{{URL::asset('./admin/img/portfolio/3.jpg')}}">
+            <img class="img-fluid" src="{{URL::asset('./admin/img/portfolio/thumbnails/3.jpg')}}" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -152,8 +152,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+          <a class="portfolio-box" href="{{URL::asset('./admin/img/portfolio/4.jpg')}}">
+            <img class="img-fluid" src="{{URL::asset('./admin/img/portfolio/thumbnails/4.jpg')}}" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -165,8 +165,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/5.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+          <a class="portfolio-box" href="{{URL::asset('./admin/img/portfolio/5.jpg')}}">
+            <img class="img-fluid" src="{{URL::asset('./admin/img/portfolio/thumbnails/5.jpg')}}" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -226,15 +226,15 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{{URL::asset('/admin/vendor/jquery.min.js')}}"></script>
-  <script src="{{URL::asset('/admin/vendor/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{URL::asset('./admin/vendor/jquery.min.js')}}"></script>
+  <script src="{{URL::asset('./admin/vendor/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="{{URL::asset('/admin/vendor/jquery.easing.min.js')}}"></script>
-  <script src="{{URL::asset('/admin/vendor/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{URL::asset('./admin/vendor/jquery.easing.min.js')}}"></script>
+  <script src="{{URL::asset('./admin/vendor/jquery.magnific-popup.min.js')}}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="{{URL::asset('/admin/js/creative.min.js')}}"></script>
+  <script src="{{URL::asset('./admin/js/creative.min.js')}}"></script>
 
 </body>
 
